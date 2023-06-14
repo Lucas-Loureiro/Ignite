@@ -1,0 +1,16 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  top: -1.75rem;
+}
+
+@media (max-width: 768px){
+  html{
+      font-size: 87.5%;
+  }
+  .wrapper{
+      max-width: 100%;
+  }
+}
