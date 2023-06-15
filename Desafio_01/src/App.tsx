@@ -2,6 +2,7 @@ import { Header } from './components/Header'
 import { NewTask } from './components/NewTask'
 import './global.css'
 import styles from './App.module.css'
+import { Task } from './components/Task'
 
 
 export function App() {
@@ -11,6 +12,8 @@ export function App() {
       <Header />
       <div className={styles.wrapper}> 
           <NewTask />
+          <br /> 
+          <Task />
       </div>
     </>
   )

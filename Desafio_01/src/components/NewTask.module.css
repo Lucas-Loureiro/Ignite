@@ -9,8 +9,9 @@
     border-radius: 8px;
     background: var(--gray-500);
     border: 1px solid var(--gray-700);
-    color: var(--white);
+    color: var(--gray-100);
     padding: 1rem;
+    
 }
 .newTaskForm input::placeholder {
     color: var(--gray-300);
@@ -26,10 +27,17 @@
     width: 5.625rem;
     padding: 1rem;
     border: none;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.newTaskForm button[type=submit]:hover{
+    background: var(--blue-100);
+    transition: background 0.5s; 
+
 }
 @media (max-width: 768px){
 
