@@ -16,6 +16,9 @@
 .newTaskForm input::placeholder {
     color: var(--gray-300);
   }
+  .newTaskForm input:focus {
+    border: 1px solid var(--purple-300);
+  }
 
 .newTaskForm button[type=submit]{
     font-size: 0.875rem;
