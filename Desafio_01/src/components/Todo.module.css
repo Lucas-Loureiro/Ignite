@@ -1,0 +1,119 @@
+.newTaskForm {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.newTaskForm input{
+    width: 39.87rem;
+    height: 3.37rem;
+    border-radius: 8px;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    color: var(--gray-100);
+    padding: 1rem;
+    
+}
+.newTaskForm input::placeholder {
+    color: var(--gray-300);
+  }
+  .newTaskForm input:focus {
+    border: 1px solid var(--purple-300);
+  }
+
+.newTaskForm button[type=submit]{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-100);
+    background: var(--blue-300);
+    border-radius: 8px;
+    height: 3.37rem;
+    width: 5.625rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newTaskForm button[type=submit]:hover{
+    background: var(--blue-100);
+    transition: background 0.5s; 
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 46rem;
+    margin-top: 4rem;
+}
+
+.container .status{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;  
+}
+
+.container .status :is(.created,  .done){
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.container .status span{
+    background: var(--gray-400);
+    padding: 0 0.5rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--gray-200);
+}
+
+.container .status .created p{
+    color: var(--blue-100);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.container .status .done p{
+    color: var(--purple-100) !important;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.container .empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding-top: 4rem;
+    border-radius: 8px;
+    border-top: 1px var(--gray-400) solid;
+    width: 46rem;
+}
+.container .empty p{
+    color: var(--gray-300);
+    font-size: 1rem;
+}
+.container .empty p:first-child{
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 20rem;
+    }
+    .newTaskForm {
+        flex-direction: column;
+    }
+    .newTaskForm input{
+        width: 24.87rem;
+    }
+    .container .empty{
+        width: 100%;
+    }
+}
